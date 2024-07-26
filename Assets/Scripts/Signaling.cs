@@ -49,13 +49,8 @@ public class Signaling : MonoBehaviour
         SetVolume(_maximumVolume);
     }
 
-    private void TurnOffAlarm()
-    {
-        if (_coroutine != null)
-            StopCoroutine(_coroutine);
-
+    private void TurnOffAlarm() =>
         SetVolume(_minimumVolume);
-    }
 
     private void SetVolume(float valume)
     {
